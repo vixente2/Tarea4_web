@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: Consumir API Mindicador ::.</title>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/indicadorEconomico.js"></script>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <th colspan="4">Indicadores Económicos</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="4">Convertidor a CLP</td>
+            </tr>
+            <tr>
+                <td>Valor CLP</td>
+                <td colspan="3">
+                    <input type="number" name="valorclp" id="valorclp" placeholder="Ej: 150000">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    UF
+                </td>
+                <td>
+                    Dólar
+                </td>
+                <td>
+                    Euro
+                </td>
+                <td>
+                    UTM
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="indicadores" class="combo_uf" value="uf">
+                </td>
+                <td>
+                    <input type="radio" name="indicadores" class="combo_dolar" value="dolar">
+                </td>
+                <td>
+                    <input type="radio" name="indicadores" class="combo_euro" value="euro">
+                </td>
+                <td>
+                    <input type="radio" name="indicadores" class="combo_utm" value="utm">
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Nombre</td>
+                <td colspan="2">
+                    <label class="lbl_nombreIndicador"></label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Valor</td>
+                <td colspan="2">
+                    <label class="lbl_valorIndicador"></label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">Resultado Conversión</td>
+                </tr>
+            <tr>
+                <td colspan="4">
+                        <label type="text" name="lbl_resultadoConversion" disabled class="lbl_resultadoConversion "> (Mostrar Valor y el indicador que corresponda)</label>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
